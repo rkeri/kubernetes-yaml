@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: otrs-pod
+  labels:
+    name: otrs-pod
+    app: otrs-main
+spec:
+  containers:
+  - name: otrs-main
+    image: juanluisbaptiste/otrs
+    ports:
+      - containerPort: 80
